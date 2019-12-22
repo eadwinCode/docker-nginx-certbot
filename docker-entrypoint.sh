@@ -10,7 +10,7 @@ if [ -f "/usr/sbin/crond" ]; then
 fi
 
 if [ -f "/usr/sbin/nginx" ]; then
-  /usr/sbin/nginx -g "daemon off;" "$@"
+  /usr/sbin/nginx -g "daemon off;" ; "$@"
 else
   echo "There is no NGINX application installed"
   "$@"
